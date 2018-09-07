@@ -6,9 +6,8 @@ let shame = false;
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
+    client.user.setActivity("Watching... Waiting...");
 });
-
-client.user.setActivity("Watching... Waiting...");
 
 client.on('message', msg => {
   if (msg.content === 'does it live?') {
